@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://h680lsv4x84d"]
+
+[ext_resource type="Script" path="res://FirstMenu.gd" id="1_savgf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_er8lr"]
+bg_color = Color(0.117647, 0.470588, 0.713726, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fhtvt"]
+bg_color = Color(0.117647, 0.470588, 0.713726, 1)
+
+[node name="FirstMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_savgf")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -8.0
+offset_top = -7.0
+offset_right = 1165.0
+offset_bottom = 658.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 478.0
+offset_top = 24.0
+offset_right = 586.0
+offset_bottom = 54.0
+text = "ClinicExplore"
+
+[node name="Search" type="Button" parent="."]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 176.0
+offset_right = 581.0
+offset_bottom = 213.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_er8lr")
+text = "Search
+"
+
+[node name="Credits" type="Button" parent="."]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 285.0
+offset_right = 576.0
+offset_bottom = 325.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fhtvt")
+text = "Credits
+"
+
+[connection signal="pressed" from="Search" to="." method="_on_search_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]

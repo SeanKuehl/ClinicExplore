@@ -1,0 +1,11 @@
+2a60927148abd1d33b818b535e306557
+::res://::1679054625
+Credits.gd::GDScript::-1::1678212561::0::1::::<>Control<>::
+Credits.tscn::PackedScene::5112264303958371734::1678727460::0::1::::<><>::res://Credits.gd
+default_env.tres::Environment::1327524934766925385::1678727460::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1678726610::0::1::::<><>::
+FirstMenu.gd::GDScript::-1::1678212510::0::1::::<>Control<>::
+FirstMenu.tscn::PackedScene::557366528008167305::1678726550::0::1::::<><>::res://FirstMenu.gd
+icon.png::CompressedTexture2D::8503699526519809135::1678044178::1678058816::1::::<><>::
+MainScene.gd::GDScript::-1::1678726363::0::1::::<>Control<>::
+MainScene.tscn::PackedScene::8668966659005890694::1678726550::0::1::::<><>::res://MainScene.gd

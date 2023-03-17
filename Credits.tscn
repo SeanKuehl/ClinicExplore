@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce3oimtws7rja"]
+
+[ext_resource type="Script" path="res://Credits.gd" id="1_18he5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lea46"]
+bg_color = Color(0.117647, 0.470588, 0.713726, 1)
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_18he5")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -7.0
+offset_top = -10.0
+offset_right = 1159.0
+offset_bottom = 656.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 21.0
+offset_right = 565.0
+offset_bottom = 51.0
+text = "Credits"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 105.0
+offset_right = 749.0
+offset_bottom = 424.0
+text = "Lead Programmer - Sean Kuehl
+
+Data License: Contains information licensed 
+under the Open Government Licence – Canada."
+
+[node name="Back Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 451.0
+offset_top = 243.0
+offset_right = 581.0
+offset_bottom = 283.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lea46")
+text = "Back"
+
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]
